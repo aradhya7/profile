@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    background: black;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+id {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+name {
+    display: block;
+    font-size: 10rem;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 1.5rem;
+    animation: kar 2s ease-in;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+@keyframes kar {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+contact {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -2rem;
+    opacity: 0;
+    animation: con 1s ease-in 2s 1 forwards;
+} 
+
+email{
+	animation: email 1s ease-in 2s 1 forwards;
+}
+
+mobile{
+	animation: mobile 1s ease-in 2s 1 forwards;
+}
+
+@keyframes con {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes email {
+    to {
+        transform: translate(-5rem,0rem);
+    }
+}
+@keyframes mobile {
+    to {
+        transform: translate(4rem,0rem);
+    }
+}
